@@ -1,0 +1,27 @@
+/* p {
+  color: white;
+}
+#navbar {
+  background-color: darkblue;
+}
+.navlink {
+  color: peachpuff;
+} */
+
+body {
+  margin: 0px;
+  border: 10px solid red;
+  margin: 10px;
+  padding: 20px;
+}
+
+#Click {
+  border: 2px solid blue;
+  padding: 15px;
+  border-radius: 20px;
+  color: #fd4601;
+  background-color: #ededed;
+  padding: 5px 18px 5px 18px;
+  text-transform: uppercase;
+  cursor: url("./images/hand-pointer.png"), auto;
+}

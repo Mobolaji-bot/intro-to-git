@@ -3,28 +3,57 @@
   <head>
     <title>My first webpage</title>
     <meta name="description" content="My first webpage" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      body {
+        background-color: blanchedalmond;
+        color: purple;
+      }
+      p {
+        font-size: 2rem;
+        font-weight: 200;
+        font-variant: small-caps;
+        font-family: courier;
+      }
+      p {
+        color: gray;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="">Career</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
-      </nav>
-    </header>
+    <nav id="navbar">
+      <li class="navlink"><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="">Career</a></li>
+      <li><a href="./Contact.html">Contact</a></li>
+      <button id="Click">Click me</button>
+    </nav>
+
     <a target="_blank" href="https://github.com/Mobolaji-bot"
       >click to go my github account</a
     >
     <h1 id="top">Lorem ipsum dolor sit amet.</h1>
     <a href="./about.html">Click to go to the about page</a>
-    <h2>Lorem ipsum dolor sit.</h2>
+    <h2
+      class="room"
+      style="
+        color: rgb(255, 0, 43);
+        font-size: 2rem;
+        background-color: aqua;
+        text-transform: uppercase;
+        font-family: courier;
+      "
+    >
+      Lorem ipsum dolor sit.
+    </h2>
     <h3>Lorem ipsum dolor sit amet consectetur.</h3>
     <h4>Lorem ipsum dolor sit.</h4>
     <h5>Lorem ipsum dolor sit amet consectetur.</h5>
     <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
     <!--Hello son-->
-    <p>hello <b>everybody</b> how are you <b>doing this fine day</b></p>
+    <p style="color: red">
+      hello <b>everybody</b> how are you <b>doing this fine day</b>
+    </p>
     <p>Hello i am <i> john</i> and <i> i like meatballs</i></p>
     <p>I <del>do not</del> everything and so on and so forth</p>
     <p>Everything to me is so <small>big</small></p>
@@ -45,8 +74,8 @@
     />
     <style>
       .tiger {
-        width: 400px;
-        border-radius: 200px;
+        width: 500px;
+        border-radius: 500px;
         margin-top: 70px;
         margin-left: 600px;
         margin-bottom: 70px;
