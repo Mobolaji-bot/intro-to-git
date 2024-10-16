@@ -1,18 +1,37 @@
 /* p {
-  color: white;
-}
+  color: white; 
+} */
 #navbar {
   background-color: darkblue;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  top: 0;
 }
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
 .navlink {
   color: peachpuff;
-} */
-
+  text-decoration: none;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
 body {
   margin: 0px;
   border: 10px solid red;
   margin: 10px;
-  padding: 20px;
 }
 
 #Click {
@@ -24,4 +43,110 @@ body {
   padding: 5px 18px 5px 18px;
   text-transform: uppercase;
   cursor: url("./images/hand-pointer.png"), auto;
+  text-decoration: line-through;
+}
+.box > p {
+  color: red;
+}
+
+.box + p {
+  color: green;
+  font-size: 30px;
+}
+.navlink:hover {
+  color: red;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#Click:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: black;
+}
+
+#text {
+  text-align: left;
+  line-height: 40px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+.box1 {
+  height: 3rem;
+  width: 5rem;
+  background-color: blue;
+}
+
+.box2 {
+  height: 4rem;
+  width: 5rem;
+  background-color: red;
+}
+
+.box3 {
+  height: 3rem;
+  width: 5rem;
+  background-color: orange;
+}
+.flexbox {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: last baseline;
+  justify-content: space-evenly;
+  width: 30vw;
+  gap: 20px;
+  flex-wrap: wrap-reverse;
+}
+
+.flexbox1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.position {
+  height: 100vh;
+  width: 100vw;
+  background-color: orange;
+  position: relative;
+}
+.boxed {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 10rem;
+  top: 20rem;
+}
+
+.absolute {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 20%;
+  left: 10rem;
+}
+
+.fixed {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  left: 50rem;
+  z-index: 20;
+  top: 0;
+}
+
+.sticky {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  position: sticky;
+  top: 50px;
+  z-index: 20;
+}
+body {
 }

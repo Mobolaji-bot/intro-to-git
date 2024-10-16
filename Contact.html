@@ -3,21 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="">Career</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
+      <nav id="navbar">
+        <div class="left">
+          <img
+            class="logo"
+            src="https://res.cloudinary.com/dhvwthnzq/image/upload/v1713865047/africash/cnbc_africa_l2yyn0.png"
+            alt=""
+          />
+        </div>
+        <div class="right">
+          <div>
+            <li><a class="navlink" href="./index.html">Home</a></li>
+            <li><a class="navlink" href="./about.html">About</a></li>
+            <li><a class="navlink" href="./Career.html">Career</a></li>
+            <li><a class="navlink" href="./Contact.html">Contact</a></li>
+          </div>
+          <button id="Click">Click me</button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <!-- <section>
-
+      <section>
         <h1>Contact page</h1>
         <p>Hello world</p>
         <form action="">
@@ -30,7 +42,7 @@
           <button type="reset">Reset</button>
           <button type="submit">Submit</button>
         </form>
-      </section> -->
+      </section>
       <section>
         <form action="">
           <div>
@@ -61,7 +73,10 @@
           </select>
         </form>
       </section>
+      <form action="">
+        <input type="radio" />
+        <label for="Netflix">Netflix</label>
+      </form>
     </main>
-    <footer></footer>
   </body>
 </html>
